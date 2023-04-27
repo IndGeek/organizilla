@@ -40,15 +40,4 @@ for file in os.listdir(cwd):
 # Prompt the user with a message box
 root = tk.Tk()
 root.withdraw()
-result = messagebox.askquestion("OrganiZilla", "Done organizing your files! Would you like to donate?")
-
-if result == 'Sure':
-    # Open website for donation
-    import webbrowser
-    webbrowser.open('https://organizilla.nated.in/donate')
-elif result == 'No Thanks':
-    # do nothing
-    pass
-else:
-    # do something else
-    pass
+messagebox.showinfo("OrganiZilla", "Done organizing your files!")
